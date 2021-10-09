@@ -1,0 +1,2 @@
+export const MENU_TOGGLED = "MENU_TOGGLED";
+export const LANGUAGE_CHANGED = "LANGUAGE_CHANGED";
