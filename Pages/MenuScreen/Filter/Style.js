@@ -1,0 +1,49 @@
+import { StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+  filter:{
+    display:"flex",
+    flexDirection:"row",
+    backgroundColor:"#00A8E8",
+  },
+  filterEl:{
+    flex:1,
+    justifyContent:"center",
+    alignItems:"center",
+  },
+  filterElPressed:{
+    flex:1,
+    justifyContent:"center",
+    alignItems:"center",
+    backgroundColor:"#ffffff22",
+  },
+  filterElVw:{
+    padding:5,
+    justifyContent:"center",
+    alignItems:"center",
+  },
+  filterElLbl:{
+    color:"#fff",
+    fontWeight:"bold",
+    fontSize:"11px",
+  },
+  filterDivider:{
+    alignSelf:"left",
+  },
+  menuHeader:{
+        display:"flex",
+        flexDirection:"row",
+        justifyContent:"left",
+        alignItems:"center",
+        backgroundColor:"#00171f11",
+        padding:"10px",
+        minWidth:"200px",
+    },
+    menuHeaderText:{
+        fontSize:20,
+        fontWeight:20,
+        color:"#00171F",
+        marginLeft:"10px",
+    }
+});
+export default styles;  

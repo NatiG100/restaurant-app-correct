@@ -1,7 +1,7 @@
 import styles from "./Style";
 import { Pressable, Text, View} from 'react-native';
 import React, {useState} from 'react';
-const MenuItem = ({text,icon,disabled})=>{
+const MenuItem = ({text,icon,disabled,onPress})=>{
     const [handsOn,setHandsOn] = useState(false);
     return(
       <Pressable 
@@ -11,6 +11,7 @@ const MenuItem = ({text,icon,disabled})=>{
         onPressOut={()=>{
           setHandsOn(false);
         }}
+        onPress={()=>{if(!disabled)onPress()}}
       >
         <View style={handsOn?styles.menuItemPressed:styles.menuItem}>
           {icon}
