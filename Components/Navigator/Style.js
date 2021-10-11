@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     },
     location:{
         color:"#fff",
-        fontSize:"18px",
+        fontSize:"15px",
         marginLeft:"20px",
     }
 });

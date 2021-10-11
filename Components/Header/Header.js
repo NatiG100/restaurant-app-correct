@@ -12,7 +12,7 @@ const Header = () =>{
     const {language} = useSelector((state)=>(state.preference));
     const dispatch = useDispatch();
     return (
-        <View style={styles.homeHeader}>
+        <View style={styles.header}>
             <Navigator/>
             {/* <Text style={styles.text}>
                 <Text style={styles.brandLeft}>{Localization[language].getBrandLeft()}</Text>

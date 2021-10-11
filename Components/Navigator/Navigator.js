@@ -9,9 +9,8 @@ import styles from './Style';
 
 const Navigator = ()=>{
     const dispatch = useDispatch();
-    const thiss= "asdf";
-    const that = thiss.toUpperCase;
     const {location} = useSelector((state)=>(state.navigator));
+    const curLoc = location[location.length-1].toUpperCase();
     const goBackHandler = ()=>{
         dispatch(backPressed());
     }  
@@ -20,7 +19,7 @@ const Navigator = ()=>{
             <Pressable onPress={goBackHandler}>
                 <IconI name="arrow-back" size={23} color={location.length===1?"#00a8e833":"#00a8e8"}/>
             </Pressable>
-            <Text style={styles.location}>Home</Text>
+            <Text style={styles.location}>{curLoc}</Text>
         </View>
     );
 }

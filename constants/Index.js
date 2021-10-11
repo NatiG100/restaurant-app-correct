@@ -21,4 +21,6 @@ export const PRICE = "PRICE";
 export const ASCENDING = "ASCENDING";
 export const DESCENDING = "DESCENDING";
 
-//sort 
+//restaurant
+export const PREVIOUS_CATEGORY = "PREVIOUS_CATEGORY";
+export const NEXT_CATEGORY = "NEXT_CATEGORY";
