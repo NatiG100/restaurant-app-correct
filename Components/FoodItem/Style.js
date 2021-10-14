@@ -1,0 +1,88 @@
+import {StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+    root:{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        padding:"5px",
+        alignItems:"stretch",
+        gap:"5px",
+        backgroundColor:"#22222208"
+    },
+    imageWrapper:{
+        width:"60px",
+        flexDirection:"row",
+        alignItems:"center",
+    },
+    image:{
+        height:"60px",
+        width:"60px",
+        borderRadius:"30px",
+    },
+    content:{
+        marginLeft:"10px",
+        justifyContent:"space-between",
+        alignItems:"stretch",
+        flexWrap: "wrap",
+        flex:5,
+        flexShrink:1,
+        gap:"15px",
+    },
+    topContent:{
+        flexShrink:1,
+        gap:"2px",
+        justifyContent:"flex-start",
+    },
+    title:{
+        flexShrink:1,
+        flex:1,
+        flexWrap:"wrap",
+        fontSize:"17px",
+        color:"#333",
+        wordWrap:"normal",
+    },
+    category:{
+        fontSize:"13px",
+        color:"#666",
+    },
+    bottomContent:{
+        flexWrap: "wrap",
+        flexDirection:"row",
+        justifyContent:"space-between",
+        gap:"5px",
+        alignItems:"center",
+    },
+    info:{
+        flexDirection:"row",
+        gap:"5px",
+    },
+    price:{
+        backgroundColor:"#00000015",
+        fontSize:"12px",
+        fontWeight:"bold",
+        width:"fit-content",
+        padding:"3px",
+        paddingHorizontal:"6px",
+        borderRadius:"4px",
+        color:"#DCB200dd",
+    },
+    fasting:{
+        backgroundColor:"#00000015",
+        fontSize:"12px",
+        width:"fit-content",
+        padding:"3px",
+        paddingHorizontal:"6px",
+        borderRadius:"4px",
+        color:"#ff3300dd",
+    },
+    detail:{
+        fontSize:"12px",
+        color:"#fff",
+        backgroundColor:"#00a8e8",
+        paddingHorizontal:"10px",
+        paddingVertical:"4px",
+        textTransform:"uppercase",
+    }
+});
+
+export default styles;
