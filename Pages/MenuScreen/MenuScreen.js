@@ -54,7 +54,7 @@ const MenuScreen =()=>{
         },
         {
             title:["Tea","ሻይ"],
-            category:["Hot","ፓስታ"],
+            category:["Hot","ትኩስ"],
             price:10,
             fasting:true,
             image:"/../../assets/BG.jpg",
@@ -73,8 +73,14 @@ const MenuScreen =()=>{
 
     ];
     const {isFood,isFasting,sortBy,sortOrder} = useSelector((state)=>(state.filter));
-    const {currentCategory, categories} = useSelector((state)=>(state.category));
-    const currentCategoryString =  categories[currentCategory];
+    const {
+        currentFoodCategory,
+        currentBeverageCategory,
+        foodCategories,
+        beverageCategories,
+    } = useSelector((state)=>(state.category));
+    const currentCategoryString =  isFood?foodCategories[currentFoodCategory][0]
+                                    :beverageCategories[currentBeverageCategory][0];
     const filterAndSort=(isFood,isFasting,sortBy,sortOrder,currentCategory,foods)=>{
         let filteredFoods = [];
         filteredFoods = foods.filter((food,index)=>{

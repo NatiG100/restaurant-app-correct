@@ -1,12 +1,28 @@
-import {PREVIOUS_CATEGORY,NEXT_CATEGORY} from './../constants';
-export function next(){
+import {
+    PREVIOUS_FOOD_CATEGORY,
+    NEXT_FOOD_CATEGORY,
+    PREVIOUS_BEVERAGE_CATEGORY,
+    NEXT_BEVERAGE_CATEGORY
+} from './../constants';
+export function nextFood(){
     return{
-        type:NEXT_CATEGORY,
+        type:NEXT_FOOD_CATEGORY,
     }
 }
 
-export function previous(){
+export function previousFood(){
     return{
-        type:PREVIOUS_CATEGORY,
+        type:PREVIOUS_FOOD_CATEGORY,
+    }
+}
+export function nextBeverage(){
+    return{
+        type:NEXT_BEVERAGE_CATEGORY,
+    }
+}
+
+export function previousBeverage(){
+    return{
+        type:PREVIOUS_BEVERAGE_CATEGORY,
     }
 }
